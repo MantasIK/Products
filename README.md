@@ -9,6 +9,6 @@ During my time working on this project I became interested in Nodes clustering c
 so I decided to run some tests on the finished system.
 
 
-Below is a gist journal that I kept in order to record my "experiments" for nay curious minds out there.
+Below is a gist journal that I kept in order to record my "experiments" for any curious minds out there.
 
 https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
