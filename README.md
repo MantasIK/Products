@@ -1,4 +1,4 @@
-#### "Products" is a system design project which replaces the database for an e-commerse website with webscale in mind. This includes an ETL process, cleaning and formatting the data, building out a new architecture, making design decisions, stress testing, cloud storage and hosting. 
+### "Products" is a system design project which replaces the database for an e-commerse website with webscale in mind. This includes an ETL process, cleaning and formatting the data, building out a new architecture, making design decisions, stress testing, cloud storage and hosting. 
 ___
 
 *"Products"* quite literally focuses on all the data related to the products found on an e-commerce website such as
