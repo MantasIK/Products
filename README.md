@@ -51,37 +51,37 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >   MongoDB is very particular about its _id. Being able to import data and set that property to a custom value proved harder than expected. I am able to convert >small amounts of data into JSON format and then import it into the database, but when one is faced with a staggering amount of data, many simple actions like >copy/paste will not work. I began thinking about buffering and will look into and npm module called etl, which could take care of my problem as well as merging my >separate CSV files into one collection.
 
 
-```
-### Friday, February 21st, 2020
-____________________________________
+
+>### Friday, February 21st, 2020
+>____________________________________
+>
+>
+>
+>### Goals:
+>   Populate the mongo database with a cleaned up products CSV, potentially start merging and aggregating multiple collections.
+>
+>### Results:
+>   I managed to populate said database with a clean products CSV. 
+>
+>### Struggles: 
+>   It took a long time to figure out how to use the etl dependency and fine tune the data provided to be clean. Doing the research to find a solution took longer >than I'd hoped. I took a deeper look into a DBS management/visualization tool called DBschema and while it seems very powerful it doesn't appear to be optimized for >mongoDB. Importing files was not possible, maybe I will use it to merge my collections later on in the project.
 
 
 
-### Goals:
-   Populate the mongo database with a cleaned up products CSV, potentially start merging and aggregating multiple collections.
+>### Saturday, February 22nd, 2020
+>____________________________________
+>
+>
+>
+>### Goals:
+>   Import all the CSV files into the database and merge all my collections into one.
+>
+>### Results:
+>   I managed to import all the CSV files into the database as separate CLEAN collections as well as creating an executable ETL pipeline.
+>
+>### Struggles: 
+>   The CSV data was messy and needed to be cleaned up before importing. That took longer than expected. At first I looked into cleaning AND formatting the data >during the ETL pipeline process. While that is definitively possible, doing the research and setting it up would cost more time than I could afford and seeing how >mongoDB has built in aggregation, the natural choice was to do the merge process within the database. Maybe I will look into it in the future.
 
-### Results:
-   I managed to populate said database with a clean products CSV. 
-
-### Struggles: 
-   It took a long time to figure out how to use the etl dependency and fine tune the data provided to be clean. Doing the research to find a solution took longer than I'd hoped. I took a deeper look into a DBS management/visualization tool called DBschema and while it seems very powerful it doesn't appear to be optimized for mongoDB. Importing files was not possible, maybe I will use it to merge my collections later on in the project.
-```
-
-```
-### Saturday, February 22nd, 2020
-____________________________________
-
-
-
-### Goals:
-   Import all the CSV files into the database and merge all my collections into one.
-
-### Results:
-   I managed to import all the CSV files into the database as separate CLEAN collections as well as creating an executable ETL pipeline.
-
-### Struggles: 
-   The CSV data was messy and needed to be cleaned up before importing. That took longer than expected. At first I looked into cleaning AND formatting the data during the ETL pipeline process. While that is definitively possible, doing the research and setting it up would cost more time than I could afford and seeing how mongoDB has built in aggregation, the natural choice was to do the merge process within the database. Maybe I will look into it in the future.
-```
 
 ```
 ### Monday, February 24th, 2020
