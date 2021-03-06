@@ -18,7 +18,8 @@ I recorded the whole learning process and my *"experiments"* in a **gist journal
 
 https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 
-
+<br/>
+<br/>
 
 >### Wednesday, February 19th, 2020
 > ____________________________________
@@ -188,7 +189,7 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >
 >### Results:
 >   Initially I planned on using a docker container with MongoDB on it and pull the image from the hub into my EC2 instance. As I made progress on this step I began >to realize that from an engineering standpoint it didn't make sense. Docker containers provide a consistent work environment and the images are easy to transport, >just like git repositories. And while it makes perfect sense to containerize my database if I plan to run it on the same virtual machine as my API server, it is >absolutely redundant to run my database within a container if the only thing on that EC2 will be MongoDB. This eliminates the issue of data persistence within docker >and having to map docker volumes. I could have dockerized everything and ran both containers on one EC2 instance, but the reason I'm working on this project is to >emulate web-scalability without relying on AWS services. Setting up mongo on the virtual machine took no more than 5 minutes. Next I managed to connect my local API >server to the mongo instance on the EC2 and make postman requests. All that's left is to fire up another EC2 and run a container with my API server on it. After that >is done, I will begin stress tests and start looking into multi-server scalability.
-
+>
 >### Struggles: 
 >   Today went by without a hitch, how lucky am I?
 
