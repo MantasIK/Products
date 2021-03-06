@@ -6,12 +6,12 @@ ___
 *"Products"* quite literally focuses on all the data related to the products found on an e-commerce website such as
 name, id, sizes, styles, descriptions, related items, pictures, etc.
 
-Originally, much of the data came from **different** tables *ex:(the product descriptions, styles, and related items were separated)*, making the database a mess to navigate. I combined the tables into one organized and clean **mongoDB** schema that holds all the data about a Product.
+Originally, much of the data came from **different** tables *ex: (the product descriptions, styles, and related items were separated)*, making the database a mess to navigate. I combined the tables into one organized and clean **mongoDB** schema that holds all the data about a Product.
 
 During my time working on this project I became interested in **Node.js** clustering capabilities and their practical applications
 to handle server requests simultaneously (something **Node.js** has trouble with, since it is written in JS).
 
-Finally, I ran stress tests to see how much I can squeeze out of **Node** without relying on extra tools *ex:(caching and load balancing)*.
+Finally, I ran stress tests to see how much I can squeeze out of **Node** without relying on extra tools *ex: (caching and load balancing)*.
 
 
 Below is a gist journal that I kept in order to record my "experiments" for any curious minds out there.
