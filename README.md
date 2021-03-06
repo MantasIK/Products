@@ -19,22 +19,22 @@ I recorded the whole learning process and my *"experiments"* in a **gist journal
 https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 
 
-```
-### Wednesday, February 19th, 2020
-____________________________________
+
+>### Wednesday, February 19th, 2020
+> ____________________________________
+>
+>
+>
+> ### Goals:
+>   Research docker, choose database
+>
+>### Results:
+>   Chose mongoDB due to its fast reading speed. Started working on the schema. Didn't get to docker.
+>
+>### Struggles: 
+>   Seem to have become rusty on modularizing mongoose models.
 
 
-
-### Goals:
-   Research docker, choose database
-
-### Results:
-   Chose mongoDB due to its fast reading speed. Started working on the schema. Didn't get to docker.
-
-### Struggles: 
-   Seem to have become rusty on modularizing mongoose models.
-
-```
 
 ```
 ### Thursday, February 20th, 2020
