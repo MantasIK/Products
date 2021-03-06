@@ -32,9 +32,8 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >   Chose mongoDB due to its fast reading speed. Started working on the schema. Didn't get to docker.
 >
 >### Struggles: 
->   Seem to have become rusty on modularizing mongoose models.
+>   Seem to have become rusty on modularizing mongoose models.\
 >   
-\
 
 >### Thursday, February 20th, 2020
 >_________________________________
