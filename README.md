@@ -49,8 +49,8 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >### Struggles: 
 >   MongoDB is very particular about its _id. Being able to import data and set that property to a custom value proved harder than expected. I am able to convert >small amounts of data into JSON format and then import it into the database, but when one is faced with a staggering amount of data, many simple actions like >copy/paste will not work. I began thinking about buffering and will look into and npm module called etl, which could take care of my problem as well as merging my >separate CSV files into one collection.
 
-\
-
+<br/>
+<br/>
 
 >### Friday, February 21st, 2020
 >____________________________________
@@ -66,8 +66,8 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >### Struggles: 
 >   It took a long time to figure out how to use the etl dependency and fine tune the data provided to be clean. Doing the research to find a solution took longer >than I'd hoped. I took a deeper look into a DBS management/visualization tool called DBschema and while it seems very powerful it doesn't appear to be optimized for >mongoDB. Importing files was not possible, maybe I will use it to merge my collections later on in the project.
 
-\
-
+<br/>
+<br/>
 
 >### Saturday, February 22nd, 2020
 >____________________________________
@@ -83,8 +83,8 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >### Struggles: 
 >   The CSV data was messy and needed to be cleaned up before importing. That took longer than expected. At first I looked into cleaning AND formatting the data >during the ETL pipeline process. While that is definitively possible, doing the research and setting it up would cost more time than I could afford and seeing how >mongoDB has built in aggregation, the natural choice was to do the merge process within the database. Maybe I will look into it in the future.
 
-\
-
+<br/>
+<br/>
 
 >### Monday, February 24th, 2020
 >____________________________________
@@ -99,8 +99,9 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >
 >### Struggles: 
 >   I tried to aggregate two of my 6 collections and that process took 3 hours with no end in sight. I got concerned during the first hour since the two collections I >was merging were smaller in size compared to the others. I began researching different ways to aggregate my collections and consulted fellow engineers, wondering if >anyone encountered a similar problem. I began to consider pivoting out of mongoDB and going back to an SQL database but knowing the purpose of my API I didn't want >to give up on mongoDB just yet, seeing how it fits my needs perfectly. Just when I thought I couldn't find the answer to my problem, a senior engineer who had prior >experience with mongoDB mentioned that custom indexes created by me do not have to be unique, something I completely overlooked as I focused on mongos "_id" index. >Instead of searching through the entire collection, my $lookup method would instead search through the indices. My aggregation time was cut down by over 100%. Taking >anywhere from 5 minutes to 10 seconds.
-\
 
+<br/>
+<br/>
 
 >### Tuesday, February 25th, 2020
 >____________________________________
@@ -115,8 +116,9 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >
 >### Struggles: 
 >   I spent the majority of the day making sure my mongoose queries do not return all properties within a document. Things like "product_id" and others that are meant >for the database configurations shouldn't be shown to the client. Instead of retrieving that data from the database and then transforming it on the server side, I >searched for a query parameter that excludes specific properties. The second major hurdle of the day was setting pagination for my "products/id/list" endpoint. >Seeing how the current implementation caps the number of entries returned to 10000, I had to make sure my api did the same, otherwise a simple query of one billion >could potentially break my server.
-\
 
+<br/>
+<br/>
 
 >### Wednesday, February 26th, 2020
 >____________________________________
@@ -139,8 +141,9 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >
 >### Struggles: 
 >  The two major issues were containerizing mongoDB and the API server while maintaining a connection as well as installing a stress testing tool. The current >solution regarding docker is not ideal and I shall continue to do research and as for the testing tool, I made the decision to go with artillery but the npm >installation kept failing. At first I believe this to be an issue on my part (possible problems with zsh and my .bashrc / .bash_profile configurations) but it turns >out the npm package for artillery has an error for a dependency of a dependency. Adding a flag that ignores it, allowed me to finally install the package.
-\
 
+<br/>
+<br/>
 
 >### Thursday, February 27th, 2020
 >____________________________________
@@ -168,8 +171,9 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >### Struggles: 
 >   I ended up having to do a lot of research and not much practical work. The next phase of this project requires a lot of knowledge that must be 
 >acquired before any meaningful progress can be made. Setting up the EC2 instance on AWS while easy on the surface, provides the user with so many options that need >to be investigated carefully as to not make a mistake or accumulate extra charges.
-\
 
+<br/>
+<br/>
 
 >### Friday, February 28th, 2020
 >____________________________________
@@ -187,8 +191,9 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 
 >### Struggles: 
 >   Today went by without a hitch, how lucky am I?
-\
 
+<br/>
+<br/>
 
 >### Saturday, February 29th, 2020
 >____________________________________
@@ -203,8 +208,9 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >
 >### Struggles: 
 >   Choosing the best approach to implement my server using docker was very problematic since the code within needs to reference the ip of my database. Now if I ever >restart my MongoDB EC2 instance I would have to change the ip within the docker instance that is already running on my server dedicated EC2. I ended up going the >route of always rebuilding an image locally that I would then push onto a private docker repository.
-\
 
+<br/>
+<br/>
 
 >### Monday, March 2nd, 2020
 >____________________________________
@@ -222,4 +228,6 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >
 >### Struggles: 
 >   While trying to optimize linux for the best mongo performance I seem to have terminated mongod inappropriately. This resulted in multiple errors that I had to dig >into by exploring the deep parts of my EC2 directory. Eventually I managed to solve the problem but in my terminal command I made the mistake of using sudo which led >me down a drain of entirely new problems that needs to get fixed.
-\
+
+<br/>
+<br/>
