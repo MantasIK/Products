@@ -37,19 +37,19 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 
 
 
-```
-### Thursday, February 20th, 2020
-_________________________________
 
-### Goals: 
-Research ETL, import CSV data into mongoDB with custom _id
+>### Thursday, February 20th, 2020
+>_________________________________
+>
+>### Goals: 
+>Research ETL, import CSV data into mongoDB with custom _id
+>
+>### Results: 
+>   Managed to import bits of data from the CSV files and get a custom _id, my approach was to first convert the CSV text into JSON the mongoimport it into the >database.
+>
+>### Struggles: 
+>   MongoDB is very particular about its _id. Being able to import data and set that property to a custom value proved harder than expected. I am able to convert >small amounts of data into JSON format and then import it into the database, but when one is faced with a staggering amount of data, many simple actions like >copy/paste will not work. I began thinking about buffering and will look into and npm module called etl, which could take care of my problem as well as merging my >separate CSV files into one collection.
 
-### Results: 
-   Managed to import bits of data from the CSV files and get a custom _id, my approach was to first convert the CSV text into JSON the mongoimport it into the database.
-
-### Struggles: 
-   MongoDB is very particular about its _id. Being able to import data and set that property to a custom value proved harder than expected. I am able to convert small amounts of data into JSON format and then import it into the database, but when one is faced with a staggering amount of data, many simple actions like copy/paste will not work. I began thinking about buffering and will look into and npm module called etl, which could take care of my problem as well as merging my separate CSV files into one collection.
-```
 
 ```
 ### Friday, February 21st, 2020
