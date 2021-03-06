@@ -1,4 +1,4 @@
-**"Products" is a system design project that I worked on which replaces the database for
+**"Products" is a system design project which replaces the database for
 an e-commerse website with webscale in mind. This includes an ETL process, cleaning and formatting the data, building out a 
 new architecture, making design decisions, stress testing, cloud storage and hosting.**
 ___
