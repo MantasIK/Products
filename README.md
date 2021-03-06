@@ -1,6 +1,6 @@
-****"Products"* is a system design project that I worked on which (combined with other back-end projects) replaces the database for
+**"Products" is a system design project that I worked on which (combined with other back-end projects) replaces the database for
 an e-commerse website with webscale in mind. This includes an ETL process, cleaning and formatting the data, building out a 
-new architecture, making design decisions, and stress testing.***
+new architecture, making design decisions, and stress testing.**
 ---
 
 *"Products"* quite literally focuses on all the data related to the products found on an e-commerce website such as
