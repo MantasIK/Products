@@ -34,8 +34,7 @@ https://gist.github.com/MantasIK/1491e7192ecc0951a656cec4ba56f380
 >### Struggles: 
 >   Seem to have become rusty on modularizing mongoose models.
 
-\
- 
+<br/>
 
 >### Thursday, February 20th, 2020
 >_________________________________
